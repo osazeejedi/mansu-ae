@@ -1,10 +1,25 @@
 "use client";
+import Image from "next/image";
 import { Reveal } from "../../components/ui/Reveal";
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-primary-dark py-28 overflow-hidden">
-      {/* Decorative */}
+    <section className="relative bg-primary-dark py-28 overflow-hidden min-h-[60vh] flex items-center">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/assets/images/dubai-skyline.jpg"
+          alt="Dubai skyline aerial view"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
+        />
+        {/* Dark overlay to keep text readable */}
+        <div className="absolute inset-0 bg-primary-dark/80" />
+      </div>
+
+      {/* Decorative circle */}
       <div
         aria-hidden
         className="pointer-events-none absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full opacity-10"
