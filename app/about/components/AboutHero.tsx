@@ -9,7 +9,7 @@ export default function AboutHero() {
       <div className="absolute inset-0">
         <Image
           src="/assets/images/dubai-skyline.jpg"
-          alt="Dubai skyline aerial view"
+          alt="Dubai skyline — UAE headquarters of Mansu Technology Ltd"
           fill
           className="object-cover object-center"
           priority
@@ -34,14 +34,14 @@ export default function AboutHero() {
         </Reveal>
         <Reveal delay={0.1}>
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight max-w-2xl">
-            Who We Are in the UAE
+            Proprietary Digital Asset Trading — UAE
           </h1>
         </Reveal>
         <Reveal delay={0.2}>
           <p className="mt-5 text-white/70 text-lg max-w-xl leading-relaxed">
-            Mansu is a business services company headquartered in Dubai, UAE —
-            built to help African businesses establish, grow, and thrive in the
-            Gulf and wider MENA region.
+            Mansu Technology Ltd operates from Ras Al Khaimah, United Arab
+            Emirates. The firm was established to participate directly in digital
+            asset markets through proprietary capital deployment.
           </p>
         </Reveal>
       </div>

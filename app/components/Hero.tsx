@@ -1,7 +1,5 @@
 "use client";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { Button } from "./ui/Button";
 import { Reveal } from "./ui/Reveal";
 
 export default function Hero() {
@@ -12,16 +10,14 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-20"
         style={{
-          background:
-            "radial-gradient(circle, #C51F5F 0%, transparent 70%)",
+          background: "radial-gradient(circle, #C51F5F 0%, transparent 70%)",
         }}
       />
       <div
         aria-hidden
         className="pointer-events-none absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full opacity-10"
         style={{
-          background:
-            "radial-gradient(circle, #E73378 0%, transparent 70%)",
+          background: "radial-gradient(circle, #E73378 0%, transparent 70%)",
         }}
       />
 
@@ -32,48 +28,51 @@ export default function Hero() {
             {/* Badge */}
             <Reveal delay={0}>
               <span className="inline-flex items-center gap-2 bg-pink-light/20 text-primary rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest mb-6">
-                🇦🇪 &nbsp;Now Operating in the UAE
+                🇦🇪 &nbsp;United Arab Emirates
               </span>
             </Reveal>
 
             {/* Headline */}
             <Reveal delay={0.1}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-6">
-                Expanding African{" "}
-                <span className="text-primary">Businesses</span>{" "}
-                into the UAE &amp; Middle East
+                Proprietary{" "}
+                <span className="text-primary">Digital Asset</span>{" "}
+                Trading Firm
               </h1>
             </Reveal>
 
             {/* Subtext */}
             <Reveal delay={0.2}>
-              <p className="text-lg text-gray-600 max-w-xl leading-relaxed mb-10">
-                Mansu bridges the gap between Africa and the Gulf — providing
-                market entry strategy, seamless cross-border payments, and
-                localised marketing to help your business thrive in the UAE.
+              <p className="text-lg text-gray-600 max-w-xl leading-relaxed mb-6">
+                Mansu Technology Ltd is a UAE-incorporated proprietary trading
+                company focused on digital assets. We deploy firm capital into
+                high-liquidity cryptocurrency markets using structured trading
+                systems, disciplined risk management, and data-led execution.
               </p>
             </Reveal>
 
-            {/* CTAs */}
-            <Reveal delay={0.3}>
-              <div className="flex flex-wrap gap-4">
-                <Button href="/contact" variant="primary" className="px-8 py-3.5 text-base">
-                  Get Started
-                  <ArrowRight size={18} />
-                </Button>
-                <Button href="/about" variant="outline" className="px-8 py-3.5 text-base">
-                  Learn More
-                </Button>
+            <Reveal delay={0.25}>
+              <div className="flex flex-col gap-2 mb-10">
+                {[
+                  "We deploy only internally generated capital.",
+                  "We do not solicit, accept, or manage third-party funds.",
+                  "Our objective is steady capital growth through controlled exposure.",
+                ].map((point) => (
+                  <div key={point} className="flex items-start gap-3">
+                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    <p className="text-gray-600 text-base">{point}</p>
+                  </div>
+                ))}
               </div>
             </Reveal>
 
-            {/* Stats */}
+            {/* Key facts */}
             <Reveal delay={0.4}>
-              <div className="mt-16 flex flex-wrap gap-10">
+              <div className="mt-4 flex flex-wrap gap-10">
                 {[
-                  { value: "5+", label: "African Markets Served" },
-                  { value: "UAE", label: "Licensed & Established" },
-                  { value: "100+", label: "Clients Supported" },
+                  { value: "UAE", label: "Incorporated & Licensed" },
+                  { value: "RAK", label: "Based in Ras Al Khaimah" },
+                  { value: "24/7", label: "Active Market Monitoring" },
                 ].map((stat) => (
                   <div key={stat.label}>
                     <p className="text-3xl font-bold text-primary">{stat.value}</p>
@@ -89,21 +88,20 @@ export default function Hero() {
             <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/assets/images/hero-business.jpg"
-                alt="African business professionals in a modern UAE office setting"
+                alt="Professional digital asset trading operations"
                 fill
                 className="object-cover"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              {/* Subtle gradient overlay at the bottom */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-              {/* Floating badge */}
+              {/* Floating info card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-lg">
                 <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-1">
-                  🌍 Africa meets the Gulf
+                  🔒 Proprietary Capital Only
                 </p>
                 <p className="text-sm text-gray-700 font-medium">
-                  Trusted by 100+ businesses across 5+ African markets
+                  Structured discipline · Defined risk architecture · Performance accountability
                 </p>
               </div>
             </div>

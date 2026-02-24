@@ -1,31 +1,31 @@
 "use client";
-import { ShieldCheck, Globe, Users, Wallet } from "lucide-react";
+import { Bitcoin, Layers, Zap, Search } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 
-const benefits = [
+const markets = [
   {
-    icon: <ShieldCheck size={24} className="text-primary" />,
-    title: "Regulatory Compliance",
+    icon: <Bitcoin size={24} className="text-primary" />,
+    title: "Bitcoin (BTC)",
     description:
-      "Full support with UAE regulatory requirements, licensing, and compliance to keep your business on solid legal ground.",
+      "Bitcoin represents the largest cryptocurrency by market capitalisation and liquidity. Deep order book liquidity, high institutional participation, strong volatility cycles, and macro correlation relevance make BTC our portfolio anchor asset.",
   },
   {
-    icon: <Globe size={24} className="text-primary" />,
-    title: "Gulf Investor Network",
+    icon: <Layers size={24} className="text-primary" />,
+    title: "Ethereum (ETH)",
     description:
-      "Gain direct access to our curated network of UAE-based investors, partners, and strategic advisors actively looking for African deals.",
+      "Ethereum provides exposure to decentralised infrastructure growth. Strong ecosystem activity, institutional derivatives markets, predictable volatility structures, and high trading volume consistency offer structured swing and momentum opportunities.",
   },
   {
-    icon: <Wallet size={24} className="text-primary" />,
-    title: "Seamless Cross-Border Payments",
+    icon: <Zap size={24} className="text-primary" />,
+    title: "Solana (SOL)",
     description:
-      "Move money between Africa and the UAE effortlessly with our payment infrastructure — fast, reliable, and cost-effective.",
+      "Solana represents high-performance blockchain infrastructure. Strong volatility expansion phases, growing ecosystem adoption, active speculative liquidity, and trend persistence characteristics support structured momentum allocation.",
   },
   {
-    icon: <Users size={24} className="text-primary" />,
-    title: "Dedicated Local Expertise",
+    icon: <Search size={24} className="text-primary" />,
+    title: "Emerging Digital Assets",
     description:
-      "Our on-the-ground UAE team provides the cultural insight and local relationships needed to accelerate your expansion.",
+      "We continuously screen new market entrants. Assets are evaluated on minimum liquidity thresholds, exchange depth metrics, volatility sustainability, risk-reward structure, and market manipulation indicators. Assets failing internal thresholds are excluded.",
   },
 ];
 
@@ -38,36 +38,37 @@ export default function Benefits() {
           <div>
             <Reveal>
               <span className="text-primary font-semibold text-sm uppercase tracking-widest">
-                Why Mansu AE
+                What We Trade
               </span>
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-                Your trusted bridge between Africa and the UAE
+                High-liquidity digital assets with institutional participation
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-5 text-gray-500 leading-relaxed max-w-lg">
-                We understand both sides of the equation. With deep roots in
-                African markets and an established presence in Dubai, we deliver
-                results for businesses that are serious about Gulf expansion.
+                We operate in liquid cryptocurrency markets where transparency,
+                volatility, and market depth allow structured strategy
+                execution. Every asset we trade passes a strict internal
+                evaluation framework.
               </p>
             </Reveal>
           </div>
 
-          {/* Right: Benefit cards */}
+          {/* Right: Market cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {benefits.map((b, i) => (
-              <Reveal key={b.title} delay={i * 0.1}>
+            {markets.map((m, i) => (
+              <Reveal key={m.title} delay={i * 0.1}>
                 <div className="p-6 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all duration-300 h-full flex flex-col gap-3">
                   <div className="w-11 h-11 rounded-lg bg-pink-light/15 flex items-center justify-center">
-                    {b.icon}
+                    {m.icon}
                   </div>
                   <h3 className="font-bold text-gray-900 text-[15px]">
-                    {b.title}
+                    {m.title}
                   </h3>
                   <p className="text-sm text-gray-500 leading-relaxed">
-                    {b.description}
+                    {m.description}
                   </p>
                 </div>
               </Reveal>

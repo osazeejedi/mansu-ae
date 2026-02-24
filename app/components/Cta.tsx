@@ -1,12 +1,19 @@
 "use client";
-import { ArrowRight } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { Button } from "./ui/Button";
+import { ArrowRight } from "lucide-react";
+
+const positioning = [
+  "Structured discipline",
+  "Defined risk architecture",
+  "Performance accountability",
+  "Measured capital growth objectives",
+];
 
 export default function Cta() {
   return (
     <section className="py-20 bg-primary relative overflow-hidden">
-      {/* Decorative blob */}
+      {/* Decorative blobs */}
       <div
         aria-hidden
         className="pointer-events-none absolute -top-20 -right-20 w-[350px] h-[350px] rounded-full opacity-20"
@@ -18,35 +25,57 @@ export default function Cta() {
         style={{ background: "radial-gradient(circle, #fff 0%, transparent 70%)" }}
       />
 
-      <div className="container mx-auto px-4 relative z-10 text-center">
-        <Reveal>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-2xl mx-auto">
-            Ready to expand into the UAE?
-          </h2>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p className="mt-5 text-white/80 text-lg max-w-xl mx-auto leading-relaxed">
-            Let&apos;s build your Gulf market strategy together. Our team is
-            ready to help you make the move — seamlessly.
-          </p>
-        </Reveal>
-        <Reveal delay={0.2}>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Button
-              href="/contact"
-              className="bg-white !text-primary hover:!text-white hover:bg-grey-light px-8 py-3.5 text-base font-bold rounded-full"
-            >
-              Talk to Us
-              <ArrowRight size={18} />
-            </Button>
-            <Button
-              href="/about"
-              className="border-2 border-white text-white hover:bg-white/10 px-8 py-3.5 text-base font-semibold rounded-full"
-            >
-              Learn More
-            </Button>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left */}
+          <div>
+            <Reveal>
+              <p className="text-white/60 text-sm font-semibold uppercase tracking-widest mb-3">
+                Our Positioning
+              </p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Capital management driven by data, not speculation.
+              </h2>
+            </Reveal>
+            <Reveal delay={0.2}>
+              <p className="mt-5 text-white/75 text-lg leading-relaxed">
+                Mansu Technology Ltd approaches proprietary trading as a capital
+                management exercise — systematic, disciplined, and accountable
+                to defined performance parameters.
+              </p>
+            </Reveal>
+            <Reveal delay={0.3}>
+              <div className="mt-8">
+                <Button
+                  href="/contact"
+                  className="bg-white !text-primary hover:!text-white hover:bg-grey-light px-8 py-3.5 text-base font-bold rounded-full"
+                >
+                  Corporate Enquiries
+                  <ArrowRight size={18} />
+                </Button>
+              </div>
+            </Reveal>
           </div>
-        </Reveal>
+
+          {/* Right — Positioning pillars */}
+          <Reveal delay={0.2}>
+            <div className="flex flex-col gap-4">
+              {positioning.map((item, i) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/10"
+                >
+                  <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                    0{i + 1}
+                  </span>
+                  <p className="text-white font-medium">{item}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

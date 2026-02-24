@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <span className="text-2xl font-bold text-white tracking-tight">Mansu</span>
+            <span className="text-2xl font-bold text-white tracking-tight">Mansu Technology Ltd</span>
             <p className="text-sm text-white/70 max-w-xs leading-relaxed">
-              Bridging African businesses to the UAE &amp; Middle East through
-              strategy, payments, and local expertise.
+              UAE-incorporated proprietary trading firm focused on digital asset
+              markets. We deploy firm capital only — no third-party funds managed.
             </p>
           </div>
 
@@ -42,16 +42,21 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-white/50">
-              Contact
+              Corporate Information
             </h4>
             <ul className="flex flex-col gap-2 text-sm text-white/80">
-              <li>Dubai, United Arab Emirates</li>
-              <li>
+              <li className="leading-relaxed">
+                Office A, RAK DAO Business Centre<br />
+                RAK BANK ROC Office, Ground Floor<br />
+                Al Rifaa, Sheikh Mohammed Bin Zayed Road<br />
+                Ras Al Khaimah, United Arab Emirates
+              </li>
+              <li className="mt-2">
                 <a
-                  href="mailto:hello@mansu.ae"
+                  href="tel:+971501132034"
                   className="hover:text-white transition-colors"
                 >
-                  hello@mansu.ae
+                  +971 50 113 2034
                 </a>
               </li>
             </ul>
@@ -59,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
-          <p>© {new Date().getFullYear()} Mansu AE. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Mansu Technology Ltd. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="hover:text-white/70 transition-colors">
               Privacy Policy
