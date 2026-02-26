@@ -41,15 +41,19 @@
 @theme inline {
   --font-sans: "Gilroy", sans-serif;
 
-  --color-primary:      #C51F5F;
-  --color-primary-dark: #5F0025;
-  --color-pink:         #E73378;
-  --color-pink-dark:    #A30F48;
-  --color-pink-light:   #FF71A8;
+  --color-primary:      #0B2C5F;
+  --color-primary-dark: #071A3E;
+  --color-accent:       #C9A84C;
+  --color-accent-dark:  #A8862E;
+  --color-accent-light: #E8C97A;
+  /* legacy aliases kept for backward compatibility */
+  --color-pink:         #C9A84C;
+  --color-pink-dark:    #A8862E;
+  --color-pink-light:   #E8C97A;
   --color-secondary:    #E4E4E4;
-  --color-background:   #FFF4F8;
+  --color-background:   #F7F9FC;
   --color-grey:         #BBB7B7;
-  --color-grey-light:   #FFF1F1;
+  --color-grey-light:   #EEF2F7;
   --color-grey-medium:  #F5F7F9;
 }
 

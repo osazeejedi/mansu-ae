@@ -11,7 +11,7 @@ const partners = [
       "FV Bank supports our banking infrastructure and financial operations, providing the institutional-grade banking foundation required for a regulated proprietary trading firm operating in the UAE.",
   },
   {
-    icon: <BarChart2 size={32} className="text-primary" />,
+    icon: <BarChart2 size={32} color="#F0B90B" />,
     category: "Trading Partner",
     name: "Binance",
     description:

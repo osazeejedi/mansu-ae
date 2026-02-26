@@ -4,25 +4,25 @@ import { Reveal } from "./ui/Reveal";
 
 const markets = [
   {
-    icon: <Bitcoin size={24} className="text-primary" />,
+    icon: <Bitcoin size={24} color="#F7931A" />,
     title: "Bitcoin (BTC)",
     description:
       "Bitcoin represents the largest cryptocurrency by market capitalisation and liquidity. Deep order book liquidity, high institutional participation, strong volatility cycles, and macro correlation relevance make BTC our portfolio anchor asset.",
   },
   {
-    icon: <Layers size={24} className="text-primary" />,
+    icon: <Layers size={24} color="#627EEA" />,
     title: "Ethereum (ETH)",
     description:
       "Ethereum provides exposure to decentralised infrastructure growth. Strong ecosystem activity, institutional derivatives markets, predictable volatility structures, and high trading volume consistency offer structured swing and momentum opportunities.",
   },
   {
-    icon: <Zap size={24} className="text-primary" />,
+    icon: <Zap size={24} color="#9945FF" />,
     title: "Solana (SOL)",
     description:
       "Solana represents high-performance blockchain infrastructure. Strong volatility expansion phases, growing ecosystem adoption, active speculative liquidity, and trend persistence characteristics support structured momentum allocation.",
   },
   {
-    icon: <Search size={24} className="text-primary" />,
+    icon: <Search size={24} color="#0B2C5F" />,
     title: "Emerging Digital Assets",
     description:
       "We continuously screen new market entrants. Assets are evaluated on minimum liquidity thresholds, exchange depth metrics, volatility sustainability, risk-reward structure, and market manipulation indicators. Assets failing internal thresholds are excluded.",

@@ -10,14 +10,14 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-20"
         style={{
-          background: "radial-gradient(circle, #C51F5F 0%, transparent 70%)",
+          background: "radial-gradient(circle, #0B2C5F 0%, transparent 70%)",
         }}
       />
       <div
         aria-hidden
         className="pointer-events-none absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full opacity-10"
         style={{
-          background: "radial-gradient(circle, #E73378 0%, transparent 70%)",
+          background: "radial-gradient(circle, #C9A84C 0%, transparent 70%)",
         }}
       />
 
